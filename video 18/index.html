@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>px,rem,em,vh,vw,%&more</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        box-sizing: border-box;
+        /* width: 2048px; */
+        width: 80vw;
+        margin: auto;
+        height: 10vh;
+        background-color: lightblue;
+        border: 2px solid blue;
+      }
+      .container {
+        box-sizing: border-box;
+        /* width: 2048px; */
+        width: 80vw;
+        height: 45vh;
+        margin: 23px auto;
+        font-size: 18px;
+        background-color: lightblue;
+        border: 2px solid blue;
+      }
+      .container p {
+        /* font-size: 2em; */
+        font-size: 2rem;
+      }
+      .mycont{
+        font-size: 22px; 
+        background-color: brown;
+        color: bisque;
+        width: 100vmin;
+        height: 100vmin;
+      }
+      .mysecondcont{
+        font-size: 22px; 
+        background-color: rgb(73, 42, 165);
+        color: maroon;
+        width: 100vmax;
+        height: 100vmax;
+         text-align: center;
+      }
+      .myfivcont{
+        box-sizing: border-box;
+        border: 2px solid black;
+        width:80vw;
+min-height: 80vh;
+        margin: 20px auto;
+        font-size: 15px;
+        background-color: brown;
+      }
+      .myfivcont > div{
+        font-size: 2em;
+        border: 2px solid black;
+        width: 50%;
+      }
+      .myfivcont > div > div{
+        border: 2px solid black;
+        width: 50; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">this is the box</div>
+    <div class="container">
+      <p>this is the container</p>
+    </div>
+    <div class="mycont"> I am another container </div> 
+    <div class="mysecondcont"> i am another secondcont</div><hr>
+    <div class="myfivcont"><div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sint blanditiis maiores facilis a reprehenderit!<div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tenetur error animi rerum quas nostrum dolores totam, quidem dolorem magni itaque quos eligendi sed. Blanditiis fugit quod corrupti accusantium vitae.</div> </div>
+    </div>
+  </body>
+</html>
